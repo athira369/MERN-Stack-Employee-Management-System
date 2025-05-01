@@ -14,7 +14,7 @@ const DepartmentList = () => {
     setDepLoading(true);
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/department",
+        "https://mern-stack-employee-management-system.vercel.app/api/department",
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,

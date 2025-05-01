@@ -25,7 +25,7 @@ const Settings = () => {
         setError("New Password and confirm password do not match")     
          }else{
           try{
-            const response = await axios.put("http://localhost:5000/api/settings/change-password",setting
+            const response = await axios.put("https://mern-stack-employee-management-system.vercel.app/api/settings/change-password",setting
               ,{
                 headers:{
                    Authorization: `Bearer ${localStorage.getItem("token")}`,

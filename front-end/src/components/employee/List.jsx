@@ -13,7 +13,7 @@ const List = () => {
           setEmpLoading(true);
           try {
             const response = await axios.get(
-              "http://localhost:5000/api/employee",
+              "https://mern-stack-employee-management-system.vercel.app/api/employee",
               {
                 headers: {
                   Authorization: `Bearer ${localStorage.getItem("token")}`,

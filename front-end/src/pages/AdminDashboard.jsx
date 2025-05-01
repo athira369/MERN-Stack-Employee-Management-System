@@ -8,7 +8,7 @@ import NavBar from '../components/dashboard/NavBar'
 const AdminDashboard = () => {
   const {user,loading} = useAuth()
  const  navigate = useNavigate()
- if(loading){git add .
+ if(loading){
   return <div>loading...</div>
  }
   if(!user)

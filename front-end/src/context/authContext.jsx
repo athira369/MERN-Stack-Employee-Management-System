@@ -14,7 +14,7 @@ const  AuthProvider = ({ children }) => {
         {
 
       const response = await axios.get(
-          "http://localhost:5000/api/auth/verify",{
+          "https://mern-stack-employee-management-system.vercel.app/api/auth/verify",{
             headers:{
               Authorization :`Bearer ${token}`            }
           }
