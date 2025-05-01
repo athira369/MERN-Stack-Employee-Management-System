@@ -19,7 +19,10 @@ const PORT = process.env.PORT || 5000;
 const app = express();
 
 // Middleware (ORDER MATTERS)
-app.use(cors());
+app.use(cors({
+    origin:"https://mern-stack-employee-management-system-s1l3.vercel.app/",
+    credentials:true
+}));
 app.use(express.json()); // ✅ Parse JSON before defining routes
 app.use(express.urlencoded({ extended: true })); // ✅ Support form data
 app.use(express.static('public/upload'))
