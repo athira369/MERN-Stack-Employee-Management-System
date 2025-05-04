@@ -21,8 +21,8 @@ const app = express();
 
 // Middleware (ORDER MATTERS)
 app.use(cors({
-    origin:"https://mern-stack-employee-management-system-pf8b.vercel.app",
-    credentials:true
+    origin:["https://mern-stack-employee-management-system-pf8b.vercel.app"],
+    credentials:true,
 }));
 app.use(express.json()); // ✅ Parse JSON before defining routes
 app.use(express.urlencoded({ extended: true })); // ✅ Support form data
