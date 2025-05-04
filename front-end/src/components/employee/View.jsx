@@ -35,7 +35,7 @@ const View = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <img
-            src={`http://localhost:5000/${employee.userId.image}`}
+            src={`https://mern-stack-employee-management-system.vercel.app/${employee.userId.image}`}
             className="rounded-full border w-72"
             alt=""
           />

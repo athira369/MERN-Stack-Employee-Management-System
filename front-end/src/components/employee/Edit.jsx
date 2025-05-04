@@ -70,7 +70,7 @@ const Edit = () => {
     e.preventDefault();
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/employee/edit/${id}`,
+        `https://mern-stack-employee-management-system.vercel.app/api/employee/edit/${id}`,
         employee,
         {
           headers: {

@@ -33,7 +33,7 @@ const Detail = () => {
   const changeStatus = async (id,status) =>{
      try {
         const response = await axios.put(
-          `http://localhost:5000/api/leave/${id}`,{status},
+          `https://mern-stack-employee-management-system.vercel.app/api/leave/${id}`,{status},
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -58,7 +58,7 @@ const Detail = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <img
-            src={`http://localhost:5000/${leave.employeeId.userId.image}`}
+            src={`https://mern-stack-employee-management-system.vercel.app/${leave.employeeId.userId.image}`}
             className="rounded-full border w-72"
             alt=""
           />

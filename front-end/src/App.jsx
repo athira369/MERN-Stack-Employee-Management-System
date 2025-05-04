@@ -20,6 +20,9 @@ import AddLeave from "./components/leave/Add.jsx";
 import Settings from "./components/employeeDashboard/Settings.jsx";
 import Table from "./components/leave/Table.jsx";
 import Detail from "./components/leave/Detail.jsx";
+import Attendance from "./components/attendance/Attendance.jsx";
+import AttendanceReport from "./components/attendance/AttendanceReport.jsx";
+
 function App() {
   return (
     <BrowserRouter>
@@ -94,6 +97,8 @@ function App() {
 
           <Route path="/admin-dashboard/employees" element={<List />}></Route>
           <Route path = "/admin-dashboard/setting" element={<Settings />}></Route>
+          <Route path = "/admin-dashboard/attendance" element={<Attendance />}></Route>
+          <Route path = "/admin-dashboard/attendance-report" element={<AttendanceReport />}></Route>
         </Route>
         <Route
           path="/employee-dashboard"

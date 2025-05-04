@@ -27,7 +27,7 @@ const List = () => {
                 dep_name: emp.department.dep_name,
                 name:emp.userId.name,
                 dob: new Date(emp.dob).toLocaleDateString(),
-                image:<img  width={40} className='rounded-full'src ={`http://localhost:5000/${emp.userId.image}`}/>,
+                image:<img  width={40} className='rounded-full'src ={`https://mern-stack-employee-management-system.vercel.app/${emp.userId.image}`}/>,
                 actions: (<EmployeeButtons Id ={emp._id}/>
                   
                 ),
